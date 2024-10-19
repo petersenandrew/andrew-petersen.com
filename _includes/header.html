@@ -1,63 +1,22 @@
-<header>
-  <a href="{{ site.url }}/" id="site-name">Andrew Petersen</a>
-  <nav class="nav-buttons">
-    <a href="{{ site.url }}/">Home</a>
-    <a href="{{ site.url }}/about">About</a>
-    <a href="{{ site.url }}/projects">Projects</a>
-  </nav>
-</header>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-  :root {
-    font-family: "Noto Sans", sans-serif;
-    background-color: #fff;
-  }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-.section {
-  text-align: center;  
-}
-
-header {
-  position:sticky;
-  box-sizing: border-box;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #397bfa;
-  color:white;
-  box-shadow: 0px 2px rgba(0, 0, 0, .1);
-}
-
-#site-name {
-  margin: 0;
-  font-size: 3.4em;
-  font-weight: 500;
-  color:white;
-  text-decoration: none;
-}
-
-.nav-buttons a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  transition: background-color 0.3s;
-  border-radius: 5px;
-  font-size: 1.2em;
-}
-
-.nav-buttons a:hover {
-  background-color: #2d63c9;
-  border-radius: 5px;
-  
-}
-</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ site.url }}/">Andrew Petersen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.url }}/resume">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
