@@ -1,0 +1,9 @@
+nav-items:
+  - term: "Home"
+    definition: "/"
+  - term: "Portfolio"
+    definition: "/portfolio"
+  - term: "Resume"
+    definition: "/resume"
+  - term: "About"
+    definition: "/about"
