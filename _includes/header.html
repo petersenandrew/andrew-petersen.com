@@ -1,21 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{{ site.url }}">Andrew Petersen</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      {% for item in site.data.dictionary.nav-items %}
-        {% if page.url == item.page %}
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ site.url }}{{ item.page}}">{{ item.name }}<span class="sr-only">(current)</span></a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.url }}">Andrew Petersen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          {% for item in site.data.dictionary.nav-items %}
+            <li class="nav-item">
+              {% if page.url == item.page %}
+                <a class="nav-link active" aria-current="page" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
+              {% else %}
+                <a class="nav-link" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+      </ul>
+    </div>
   </div>
 </nav>
+ 
