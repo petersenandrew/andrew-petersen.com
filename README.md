@@ -20,7 +20,7 @@ I’ve always felt that traditional paper resumes don’t really capture everyth
   - Bootstrap gives me a solid set of UI elements and supports mobile design right out of the box. This makes it easier and faster for me to build my site. This framework helps streamline the process so I don't spend hours stuck debugging.
 
 ## Installation
-- Bootstrap Version: `4.4.1`
+- Bootstrap Version: `5.3.3`
 ```
 Installation info coming soon
 
