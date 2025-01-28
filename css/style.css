@@ -11,3 +11,11 @@
 .project-hover-effect:hover {
   transform: scale(1.03);
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 350;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 350;
+}
