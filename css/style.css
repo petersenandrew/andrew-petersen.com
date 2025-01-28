@@ -1,0 +1,13 @@
+.project-image-box {
+  height: 25vh;
+  overflow: hidden;
+  min-height: 135px;
+}
+
+.project-hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.project-hover-effect:hover {
+  transform: scale(1.03);
+}
