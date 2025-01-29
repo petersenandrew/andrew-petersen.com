@@ -28,3 +28,43 @@ h6, .h6 {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.resume {
+  grid-template-columns: 1fr 1fr;
+}
+
+.resume-education {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.resume-experience {
+  grid-column: 2;
+  grid-row: span 3;
+}
+
+.resume-research {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+@media (max-width: 1200px) {
+  .resume {
+    grid-template-columns: 1fr;
+  }
+  .resume-education {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .resume-experience {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .resume-research {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
