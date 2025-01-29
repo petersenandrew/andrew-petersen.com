@@ -28,3 +28,12 @@ function dateDifference(date) {
 
   return years + months;
 }
+
+document.getElementById('resume').addEventListener('click', (event) => {
+  const toggleDescription = event.target.closest('.toggle-description');
+  if(!toggleDescription) {
+    console.log('asdf');
+    return;
+  }
+  toggleDescription.querySelector('.description').classList.toggle('minimized');
+});
