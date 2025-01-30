@@ -28,3 +28,10 @@ function dateDifference(date) {
 
   return years + months;
 }
+
+document.getElementById('theme-switcher').addEventListener('click', (event) => {
+  
+  
+  event.target.classList.remove('btn-dark');
+  event.target.classList.add('btn-light');
+});
