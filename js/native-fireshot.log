@@ -1,0 +1,13 @@
+29-01-25 21:29:18.217  Started
+29-01-25 21:29:18.217  With command line: C:\Users\Tegze\Github Projects\andrew-petersen.com\js\fireshot-firefox-plugin.exe 
+29-01-25 21:29:18.217  Target engine is: Firefox
+29-01-25 21:29:18.219  Using folder for deployment: C:\Users\Tegze\AppData\Roaming\FireShot\1.12.18
+29-01-25 21:29:18.219  Created directory with result: 1
+29-01-25 21:29:18.219  Copying myself...
+29-01-25 21:29:18.221  Successfully written 368856 bytes.
+29-01-25 21:29:18.221  Extracting manifest...
+29-01-25 21:29:18.251  Written 391 bytes
+29-01-25 21:29:18.252  Done
+29-01-25 21:29:18.252  Writing registry...
+29-01-25 21:29:18.252  Successfully registered to HKEY_CURRENT_USER
+29-01-25 21:29:18.253  Exit
