@@ -29,6 +29,13 @@ h6, .h6 {
   transform: translateX(-50%);
 }
 
+ul {
+  margin-bottom: 0px;
+}
+
+
+/* Resume Formatting */
+
 .resume {
   grid-template-columns: 1fr 1fr;
 }
