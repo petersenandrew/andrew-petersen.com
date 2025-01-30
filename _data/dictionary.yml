@@ -1,7 +1,13 @@
 nav-items:
-  - name: "Home"
-    page: "/"
   - name: "Resume"
     page: "/resume"
   - name: "About"
     page: "/about"
+
+nav-projects:
+  - name: "Portfolio Website"
+    page: "/portfolio"
+  - name: "HoloCure Build Generator"
+    page: "/holocure"
+  - name: "Research Project"
+    page: "/research-project"

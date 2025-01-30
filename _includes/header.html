@@ -1,20 +1,41 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-2 py-lg-3">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-md-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ site.url }}">Andrew Petersen</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          {% for item in site.data.dictionary.nav-items %}
-            <li class="nav-item">
-              {% if page.url == item.page %}
-                <a class="nav-link active" aria-current="page" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
-              {% else %}
-                <a class="nav-link" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
-              {% endif %}
-            </li>
-          {% endfor %}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Needs alignment -->
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item">
+          {% if page.url == "/" %}
+          <a class="nav-link active" aria-current="page" href="{{ site.url }}/">Home</a>
+        {% else %}
+          <a class="nav-link" href="{{ site.url }}/">Home</a>
+        {% endif %}
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+          <ul class="dropdown-menu">
+            {% for item in site.data.dictionary.nav-projects %}
+              <li>
+                {% if page.url == item.page %}
+                  <a class="dropdown-item active" aria-current="page" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
+                {% else %}
+                  <a class="dropdown-item" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% for item in site.data.dictionary.nav-items %}
+          <li class="nav-item">
+            {% if page.url == item.page %}
+              <a class="nav-link active" aria-current="page" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
+            {% else %}
+              <a class="nav-link" href="{{ site.url }}{{ item.page}}">{{ item.name }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
