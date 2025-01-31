@@ -101,8 +101,12 @@ li {
 
 /* About Formatting */
 
+.about-container {
+  width: 60vw;
+}
+
 .about {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
 
 .about-desc {
@@ -121,6 +125,10 @@ li {
 }
 
 @media (max-width: 1200px) {
+  .about-container {
+    width: 75vw;
+  }
+
   .about {
     grid-template-columns: 1fr;
   }
@@ -132,6 +140,8 @@ li {
   .about-picture {
     grid-column: 1;
     grid-row: 1;
+    width: 75%;
+    max-width: 200px;
   }
   
   .about-contact {
