@@ -37,6 +37,11 @@ li {
   margin-bottom: .6em;
 }
 
+.portfolio-item-image-box {
+  max-height: 400px;
+
+}
+
 
 /* Resume Formatting */
 
