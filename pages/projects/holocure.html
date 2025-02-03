@@ -1,15 +1,150 @@
 ---
 layout: default
-title: "HoloCure Build Calculator"
+title: "HoloCure Build Planner"
 permalink: /holocure
 ---
-<div class="jumbotron text-center mt-2">
-  <div class="container">
-    <div class="row">
+  <div class="container mt-2">
+    <div class="row mt-3 text-center">
       <div class="col-12">
-        <h1>HoloCure Build Calculator</h1>
-        <p>This is about my HoloCure Build Calculator</p>
+        <h1 class="display-3">HoloCure Build Planner</h1>
+        <h5>A loadout planner for v0.6 of the game HoloCure</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://docs.google.com/spreadsheets/d/1NBp1Edtcwjjj68OAH1k3QEQ3ZxuL9UD0Uq6nXpoIioE/edit?usp=sharing" class="small" target="_blank" rel="noopener noreferrer">
+              Planner<i class="bi bi-box-arrow-up-right ps-1"></i>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="bg-light py-4 mt-5">
+      <div class="row justify-content-center pb-4">
+        <div class="col-12 col-lg-6">
+          <h1 class="text-center">Overview</h1>
+          <div class="row mt-3">
+            <div class="col-3 col-lg-2 text-end">
+              <span><b>Context:</b></span>
+            </div>
+            <div class="col-9 col-lg-10">
+              <span>I created this project a couple years ago when I only built projects in spreadsheets. This was to help people that play the game HoloCure create builds as it's hard to know when playing the game what items should pick up, and how they can be used.</span>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3 col-lg-2 text-end">
+              <span><b>Role:</b></span>
+            </div>
+            <div class="col-9 col-lg-10">
+              <span>I created this projected independently, completely in google sheets. The entire UI and background functionality are coded entirely with native elements.</span>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3 col-lg-2 text-end">
+              <span><b>Tools Used:</b></span>
+            </div>
+            <div class="col-9 col-lg-10">
+              <span>Google Sheets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-12 col-lg-8">
+          <h1 class="text-center">TL;DR</h1>
+          <div class="row mt-3">
+            <div class="col-3 col-lg-2 text-end">
+              <span><b>Problem:</b></span>
+            </div>
+            <div class="col-9 col-lg-10">
+              <span>HoloCure is a roguelike game where you pick up items and weapons that can be combined to create strong upgrades. The issue with roguelike games is that you don't know what you'll find, so you don't know what you should focus on obtaining. Attempting to use the wiki to see items results in a long list of items, not showing how to create them, or see if theres conflicts.</span>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3 col-lg-2 text-end">
+              <span><b>Solution:</b></span>
+            </div>
+            <div class="col-9 col-lg-10">
+              <span>My site manages many different factors. First, it displays all items and weapons directly to the user. This way the user can easily pick and choose their loadout. As the user selects their loadout though, certain items will become grayed out as they are no longer obtainable. The header shows the current build similar to the original game.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center text-center">
+      <div class="col-12 col-lg-8">
+        <h2>HoloCure</h2>
+        <div class="row mt-3">
+          <div class="col-lg-6 col-12">
+            <img class="img-fluid object-fit-cover portfolio-item-image-box" src="images/holocure/holocure-logo.png" alt="HoloCure Logo">
+          </div>
+          <div class="col-lg-6 col-12 mt-3">
+            <img class="img-fluid object-fit-cover portfolio-item-image-box" src="images/holocure/holocure.png" alt="HoloCure Gameplay">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>HoloCure is a game created by Kay Yu and is a game based on the Japanese virtual idol company Hololive. The game is a stage or endless roguelike where you collect items and weapons as you play to make your character stronger. One of the hardest parts of playing is knowing what all the items do, and which ones work together.</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://store.steampowered.com/app/2420510/HoloCure__Save_the_Fans/" class="small" target="_blank" rel="noopener noreferrer">
+            HoloCure<i class="bi bi-box-arrow-up-right ps-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center text-center">
+      <div class="col-12 col-lg-8">
+        <h2>Planner</h2>
+        <div class="row mt-3">
+          <img class="img-fluid object-fit-cover portfolio-item-image-box" src="images/holocure/planner1.png" alt="Collabs section of planner">
+        </div>
+        <div class="row mt-3">
+          <img class="img-fluid object-fit-cover" src="images/holocure/planner2.gif" alt="View of the entire build planner">
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>This planner is the solution to many players problems. They can go through and clearly see all the weapons, items, and their respective collaborations. Players can then decide based on the descriptions which items they believe are most powerful.</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://docs.google.com/spreadsheets/d/1NBp1Edtcwjjj68OAH1k3QEQ3ZxuL9UD0Uq6nXpoIioE/edit?usp=sharing" class="small" target="_blank" rel="noopener noreferrer">
+            Planner<i class="bi bi-box-arrow-up-right ps-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center text-center">
+      <div class="col-12 col-lg-8">
+        <h2>Functionality</h2>
+        <div class="row mt-3">
+          <img class="img-fluid object-fit-cover" src="images/holocure/planner3.gif" alt="Clicking elements showing them enabling and disabling">
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>The power of this planner is it's responsive. You can select items that you want to use, and the page will update to show selection and disable items that would no longer be obtainable. This took a significant amount of time to implement in spreadsheets as you need to check how many items the player has, what items are already being used, etc.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center text-center">
+      <div class="col-12 col-lg-8">
+        <h2>Limitations</h2>
+        <div class="row mt-3">
+          <img class="img-fluid object-fit-cover" src="images/holocure/behind.png" alt="A Google Sheet with hundreds of equations">
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>While I love creating projects in Google Sheets as it allows very quick data aggregation and prototyping, it's undeniable that the UI and ease of access are limited. Currently users must make a copy of the sheet to their personal drive account to use it. The UI also cannot be easily adjusted or built as it must follow Google Sheet's formatting restrictions. End users wanting to add their own features will also struggle as behind the scenes there are hundreds of cells with equations to create the end product (See above).</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center text-center">
+      <div class="col-12 col-lg-8">
+        <h2>Future</h2>
+        <div class="row mt-2">
+          <div class="col-12">
+            <span>In the future I want to move this project from Google Sheets to a website where I can take control over the UI design and how the user interacts with items. Currently I feel the project is awesome within the limitation of Google Sheets, however being able to create cells, dynamically adjust their positions, and select items without a checkbox would allow for a far superior user interface.</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
