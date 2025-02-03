@@ -5,9 +5,11 @@ nav-items:
     page: "/about"
 
 nav-projects:
-  - name: "Portfolio Website"
+  - name: "Personal Portfolio Website"
     page: "/portfolio"
-  - name: "HoloCure Build Generator"
+  - name: "HoloCure Build Planner"
     page: "/holocure"
-  - name: "Research Project"
+  - name: "First Gen Students Across UCs"
     page: "/research-project"
+  - name: "Gantt Chart Scheduler"
+    page: "/gantt"
